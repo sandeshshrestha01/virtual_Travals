@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="bg-[#fffff30]">
+      <nav class="flex items-center justify-between px-12 h-16 lg:gap-8">
+          <!-- Logo -->
+    <a href="#" class="text-2xl font-bold border-2 px-2 py-1 whitespace-nowrap">Glance Afar</a>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown-menu absolute -top-full left-0 max-lg:bg-[#FFFFF30] w-full flex flex-col gap-6 items-center py-2 text-lg font-bold transition-all duration-300 lg:static lg:flex-row lg:justify-between">
+      <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
+        <li class="hover:text-white">Home</li>
+        <li class="hover:text-white">About Us</li>
+        <li class="hover:text-white">Service</li>
+        <li class="hover:text-white">Features</li>
+        <li class="hover:text-white">Contact Us</li>
+      </ul>
+      <div class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
+        <button>Sign Up</button>
+        <button class="bg-black rounded-lg text-white px-2 py-1">Continue</button>
+      </div>
+    </div>
+       <!-- Hamburger Menu Button -->
+    <div class="tooggle-button lg:hidden">
+        <i class="fa-solid fa-bars fa-lg cursor-pointer"></i>
+      </div>
+      </nav>
+    </header>
+    <script>
+        const toggleBtn= document.querySelector(".tooggle-button");
+        const dropdown= document.querySelector(".dropdown-menu");
+
+        toggleBtn.addEventListener("click", () =>{
+            dropdown.classList.toggle('top-16')
+        })
+    </script>
+  </body>
+</html>
